@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width" />
+		<title>Training App</title>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+		<link rel="stylesheet" href="assets/css/master.css" type="text/css" media="screen" />
+		<script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/xui.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/LawnchairAdaptorHelpers.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/DOMStorageAdaptor.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/adaptors/WebkitSQLiteAdaptor.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/lawnchair/Lawnchair.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/dsl.js" type="text/javascript" charset="utf-8"></script>
+		<script src="assets/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0b1/jquery.mobile-1.0b1.min.js"></script>
+	</head>
+	<body>
+		
+	<body> 
+
+<!-- Start of first page -->
+<div data-role="page" id="capa">
+
+	<div data-role="header">
+		<h1>Guia Médico Unimed</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<img src="assets/img/logounimed.jpg"><br>
+		<div data-role="fieldcontain">
+    		<input type="search" name="password" id="search" value="" placeholder"Digite o nome do seu médico" />
+		</div>		
+		<div data-role="fieldcontain">
+		    <fieldset data-role="controlgroup">
+		         	<input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+		         	<label for="radio-choice-1">Médicos que realizam consultas</label>
+		
+		         	<input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+		         	<label for="radio-choice-2">Médicos que realizam exames e procedimentos</label>
+		
+		         	<input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+		         	<label for="radio-choice-3">Rede prestadora</label>
+
+		    </fieldset>
+		</div>
+		<a href="#resultado" data-transition="slide" data-role="button" data-theme="a">Pesquisar</a>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+<!-- Start of second page -->
+<div data-role="page" id="resultado">
+
+	<div data-role="header">
+		<h1>Resultados para "Daniel"</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<ul data-role="listview" data-theme="c" data-inset="true">
+			<li><a href="acura.html"><h2>Daniel Alonso Del Rio</h2>
+				<p>CRM 1242</p>
+				<p>Especialidades : Hematologia e hemoterapia, Medico</p>
+				<p>Cidades : Florianopolis</p>
+				<p>Telefones : 04832519700, 04832519722</p>
+			</a></li>
+			<li><a href="acura.html"><h2>Daniel Codonho</h2>
+				<p>CRM 1600</p>
+				<p>Especialidades : Hematologia e hemoterapia, Medico</p>
+				<p>Cidades : Florianopolis</p>
+				<p>Telefones : 04830288080</p>
+			</a></li>
+			<li><a href="acura.html"><h2>Daniel De Souza Carvalho </h2>
+				<p>CRM 9841 </p>
+				<p>Especialidades : Cirurgia torácica</p>
+				<p>Cidades : Sao jose, Florianopolis</p>
+				<p>Telefones : 04833576677, 04832346677, 04833221403, 04832246978</p>
+			</a></li>
+			<li><a href="acura.html"><h2>Felipe Daniel Silva</h2>
+				<p>CRM 1320</p>
+				<p>Especialidades : Pediatria, Medico</p>
+				<p>Cidades : Florianopolis</p>
+				<p>Telefones : 04832519700, 04832519722</p>
+			</a></li>
+			<li><a href="acura.html"><h2>Daniel Castilho</h2>
+				<p>CRM 3400</p>
+				<p>Especialidades : Cirurgia geral, Cirurgia cabeça e pescoço</p>
+				<p>Cidades : Florianopolis</p>
+				<p>Telefones : 04832630241</p>
+			</a></li>
+		</ul>
+	
+	</div><!-- /content -->
+
+	<div data-role="footer">
+		<a href="#capa">Voltar à busca</a>
+	</div><!-- /footer -->
+</div><!-- /page -->
+</body>
+
+	</body>
+</html>
